@@ -16,7 +16,7 @@ for iplist in ip_addr:
     # Connect to the device
     net_connect = ConnectHandler(**device)
     
-    # Create a list of commands to configure call-home
+    # Create a list of commands to configure loopback interface
     commands = [
         "interface loopback "+str(IP),
         "ip address 172.16."+str(IP)+".1"
